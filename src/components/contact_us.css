@@ -1,0 +1,186 @@
+.contactUs_section
+{
+    width:100%;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.contactUs_section h1
+{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+.contact_us_container 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.contact_us_container .left_container
+{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.left_container div
+{
+    width: 350px;
+    height: 110px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+}
+.contact_us_container .right_container
+{
+    margin: 10px 20px;
+}
+.contact_us_container .right_container form
+{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.right_container form input
+{
+    height: 45px;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    border: none;
+
+}
+.right_container form textarea
+{
+    height: 150px;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    border: none;
+}
+
+.right_container form .send_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right_container form .send_btn button
+{
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #264653;
+    color: white;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+}
+.right_container form .send_btn button:hover
+{
+    transform: scale(1.1);
+}
+
+/*-------------- Responsive --------------- */
+@media (max-width:959px)
+{
+    .left_container div
+    {
+        width: 300px;
+    }
+    .contact_us_container .right_container form
+    {
+        width: 400px;
+    }
+
+}
+@media (max-width:799px)
+{
+    .left_container div
+    {
+        width: 280px;
+    }
+    .contact_us_container .right_container form
+    {
+        width: 350px;
+    }
+
+}
+
+@media (max-width:701px)
+{
+    .contact_us_container 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_container div
+    {
+        width: 500px;
+    }
+    .contact_us_container .right_container form
+    {
+        width: 500px;
+    }
+
+}
+
+@media (max-width:535px)
+{
+    .left_container div
+    {
+        width: 400px;
+    }
+    .contact_us_container .right_container form
+    {
+        width: 400px;
+    }
+
+}
+@media (max-width:444px)
+{
+    .left_container div
+    {
+        width: 280px;
+    }
+    .contact_us_container .right_container form
+    {
+        width: 280px;
+    }
+    .contactUs_section h1
+    {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+}
+@media (max-width:332px)
+{
+    .left_container div
+    {
+        width: 250px;
+    }
+    .contact_us_container .right_container form
+    {
+        width: 250px;
+    }
+
+}

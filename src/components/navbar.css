@@ -1,0 +1,199 @@
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #5085A5;
+}
+.navbar .logo
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.logo .logo_img
+{
+    width: 40px;
+    height: 40px;
+}
+.logo .logo_img img
+{
+    width: 100%;
+    height: 100%;
+}
+.logo .logo_name a
+{
+    text-decoration: none;
+    color:#17252A;
+}
+.logo .logo_name
+{
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+
+}
+.hamberger_btn img
+{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    display: none;
+
+
+}
+.navbar .menu
+{
+    flex: 0.6;
+    width: 100%;
+    position: relative;
+}
+.menu img
+{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+.navbar .menu ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu li
+{
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.menu a
+{
+    text-decoration: none;
+    color: #FEFFFF;
+    white-space: nowrap;
+}
+.menu li:hover 
+{
+    background-color: #17252A;
+
+}
+.menu li:hover a
+{
+    color:#3AAFA9;
+
+}
+.menu li:nth-child(1)
+{
+    background-color: #17252A;
+    
+}
+
+.menu li:nth-child(1):hover a
+{
+    color:#3AAFA9;
+}
+
+
+/*------------------ Responsive ----------------- */
+@media (max-width:1209px)
+{
+    .navbar .menu
+    {
+        flex: 0.8;
+    }
+    .menu a
+    {
+        white-space: nowrap;
+    }
+}
+@media (max-width:969px)
+{
+    .navbar
+    {
+        padding:10px 50px;
+    }
+    .hamberger_btn img
+    {
+        display: block;
+    }
+    .navbar .menu
+    {
+        position: absolute;
+        top: -100px;
+        right:0;
+        width:0;
+        padding: 20px;
+        z-index: 1;
+        overflow: hidden;
+        background-color:#264653;
+        transition: all 0.5s ease;
+
+    }
+    .menu li
+    {
+        display: none;
+    }
+    .menu a
+    {
+        display: none;
+    }
+    .menu img
+    {
+        display: none;
+    }
+    #active
+    {
+        width: 100%;
+        height:112vh;
+        top:0;
+        transition: all 0.5s ease;
+        
+    }
+    #active li, #active a , #active img
+    {
+        display: block;
+    }
+    .navbar .menu ul
+    {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu li
+    {
+        margin: 30px;
+    }
+
+
+}
+
+@media (max-width:503px)
+{
+    .navbar 
+    {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .navbar .logo
+    {
+        flex: 0.5;
+    }
+    .logo .logo_name
+    {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    .navbar
+    {
+        padding:10px 20px;
+    }
+
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+.Main__page
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #5085A5;
+    font-family: 'Poppins', sans-serif;
+}
+/*-------------------- mainpage container ----------------------------- */
+.mainPage_conatiner
+{
+    width: 100%;
+    display: flex;
+    padding: 10px 50px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.mainPage_conatiner .left
+{
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left h1
+{
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.left .button_block
+{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.left .button_block button
+{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #264653;
+    color: #FEFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+.left .button_block button:nth-child(1)
+{
+    padding: 12px 50px;
+}
+.left .button_block button:hover
+{
+    color: #3AAFA9;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+.left .button_block button:nth-child(2)
+{
+    border: 2px solid #535353;
+    background-color: rgba(0,0,0,0.2);
+}
+.left .button_block button:nth-child(2):hover
+{
+    border:2px solid transparent;
+    background-color: #264653;
+}
+.mainPage_conatiner .right 
+{
+    flex: 0.6;
+    position: relative;
+    /* background-color: green; */
+
+}
+.mainPage_conatiner .right img
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 650px;
+    height: 100%;
+}
+.right .follow_icons
+{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%,-50%);
+
+}
+.follow_icons a
+{
+    text-decoration: none;
+    color: #17252A;
+    margin-bottom: 30px;
+    font-size: 25px;
+    transition: all 0.5s ease;
+
+}
+.follow_icons a:nth-child(1):hover
+{
+    color: rgb(17, 17, 160);
+}
+.follow_icons a:nth-child(2):hover
+{
+    color: rgb(236, 72, 72);
+}
+.follow_icons a:nth-child(3):hover
+{
+    color:rgb(6, 6, 179);
+}
+/*-------------------- mainpage container ----------------------------- */
+
+/* responsive */
+@media (max-width:1270px)
+{
+    .mainPage_conatiner .left
+    {
+        flex: 0.6;
+    }
+    .left h1
+    {
+        font-size: 30px;
+    }
+    .left p
+    {
+        font-size: 12px;
+    }
+    .mainPage_conatiner .right img
+    {
+        width: 500px;
+    }
+
+}
+@media (max-width:1197px)
+{
+    .mainPage_conatiner .left
+    {
+        flex: 0.5;
+    }
+    .mainPage_conatiner
+    {
+        padding: 10px 30px;
+    }
+    .mainPage_conatiner .right img
+    {
+        margin-left: 0px;
+    }
+
+}
+@media (max-width:935px)
+{
+    .mainPage_conatiner
+    {
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+    }
+    .left
+    {
+        flex: 100%;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .mainPage_conatiner .right 
+    {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .mainPage_conatiner .right img
+    {
+        width: 400px;
+    }
+
+}
+
+@media (max-width:500px)
+{
+    .right .follow_icons
+    {
+        display: none;
+    }
+
+}
+@media (max-width:420px)
+{
+    .mainPage_conatiner .right img
+    {
+        width: 300px;
+    }
+    .left .button_block button
+    {
+        padding: 8px 30px;
+    }
+    .left .button_block button:nth-child(1)
+    {
+        padding: 10px 30px;
+    }
+    .left h1
+    {
+        font-size: 20px;
+    }
+    .left p
+    {
+        text-align: center;
+    }
+
+}
+@media (max-width:357px)
+{
+    .mainPage_conatiner .right img
+    {
+        width: 300px;
+    }
+    .left h1
+    {
+        font-size: 15px;
+    }
+    .left p
+    {
+        text-align: center;
+    }
+    .left .button_block button
+    {
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    .left .button_block button:nth-child(1)
+    {
+        padding: 7px 20px;
+    }
+
+}
